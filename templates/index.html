@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Breakouts</title>
+    <meta http-equiv="refresh" content="60">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background-color: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        .status {
+            font-weight: bold;
+        }
+        .Above {
+            color: green;
+        }
+        .Below {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Stock Breakouts</h1>
+
+    {% if stocks %}
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Current Price</th>
+            <th>Today's High</th>
+            <th>Today's Low</th>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{ stock.symbol }}</td>
+            <td>{{ stock.name }}</td>
+            <td class="status {{ 'Above' if stock.status == 'Above High' else 'Below' }}">
+                {{ stock.status }}
+            </td>
+            <td>₹{{ stock.price }}</td>
+            <td>₹{{ stock.high }}</td>
+            <td>₹{{ stock.low }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p style="text-align:center;">No breakout stocks right now. Market may be closed or no breakouts.</p>
+    {% endif %}
+</body>
+</html>
