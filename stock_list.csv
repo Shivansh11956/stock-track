@@ -1,110 +1,110 @@
 symbol,name
-RELIANCE.NS,Reliance Industries
-TCS.NS,Tata Consultancy Services
-INFY.NS,Infosys
-HINDUNILVR.NS,Hindustan Unilever
-ITC.NS,ITC Ltd
-LT.NS,Larsen & Toubro
-ASIANPAINT.NS,Asian Paints
-HDFCBANK.NS,HDFC Bank
-KOTAKBANK.NS,Kotak Mahindra Bank
-ICICIBANK.NS,ICICI Bank
-SBIN.NS,State Bank of India
-AXISBANK.NS,Axis Bank
-BAJFINANCE.NS,Bajaj Finance
-BAJAJFINSV.NS,Bajaj Finserv
-ADANIENT.NS,Adani Enterprises
-ADANIPORTS.NS,Adani Ports
-WIPRO.NS,Wipro
-TECHM.NS,Tech Mahindra
-MARUTI.NS,Maruti Suzuki
-TATAMOTORS.NS,Tata Motors
-TATASTEEL.NS,Tata Steel
-JSWSTEEL.NS,JSW Steel
-ULTRACEMCO.NS,UltraTech Cement
-GRASIM.NS,Grasim Industries
-POWERGRID.NS,Power Grid Corporation
-NTPC.NS,NTPC Ltd
-ONGC.NS,Oil & Natural Gas Corporation
-COALINDIA.NS,Coal India
-BHARTIARTL.NS,Bharti Airtel
-SUNPHARMA.NS,Sun Pharma
-CIPLA.NS,Cipla Ltd
-DRREDDY.NS,Dr. Reddy's Laboratories
-DIVISLAB.NS,Divi's Laboratories
-NESTLEIND.NS,Nestle India
-BRITANNIA.NS,Britannia Industries
-HEROMOTOCO.NS,Hero MotoCorp
-EICHERMOT.NS,Eicher Motors
-M&M.NS,Mahindra & Mahindra
-HCLTECH.NS,HCL Technologies
-BPCL.NS,Bharat Petroleum
-IOC.NS,Indian Oil Corporation
-TITAN.NS,Titan Company
-INDUSINDBK.NS,IndusInd Bank
-SHREECEM.NS,Shree Cement
-SBILIFE.NS,SBI Life Insurance
-ICICIGI.NS,ICICI Lombard
-ICICIPRULI.NS,ICICI Prudential Life
-HDFCLIFE.NS,HDFC Life Insurance
-ABB.NS,ABB India
-ACC.NS,ACC Ltd
-AMBUJACEM.NS,Ambuja Cements
-APOLLOHOSP.NS,Apollo Hospitals
-AUROPHARMA.NS,Aurobindo Pharma
-BAJAJ-AUTO.NS,Bajaj Auto
-BANKBARODA.NS,Bank of Baroda
-BEL.NS,Bharat Electronics
-BERGEPAINT.NS,Berger Paints
-BHEL.NS,BHEL
-BIOCON.NS,Biocon
-BOSCHLTD.NS,Bosch India
-CANBK.NS,Canara Bank
-CHOLAFIN.NS,Cholamandalam Finance
-COLPAL.NS,Colgate-Palmolive
-CONCOR.NS,Container Corporation
-DABUR.NS,Dabur India
-DLF.NS,DLF Ltd
-DIXON.NS,Dixon Technologies
-GAIL.NS,GAIL (India)
-GLAND.NS,Gland Pharma
+HINDUNILVR.NS,Hind Unilever
+AARTIIND.NS,Aarti Industries
 GODREJCP.NS,Godrej Consumer Products
-HAVELLS.NS,Havells India
-HINDALCO.NS,Hindalco
-HINDPETRO.NS,Hindustan Petroleum
-ICICITECH.NS,ICICI Technologies
-IGL.NS,Indraprastha Gas
-INDIGO.NS,IndiGo
-INDUSTOWER.NS,Indus Towers
-IRCTC.NS,IRCTC
-JINDALSTEL.NS,Jindal Steel
-LICI.NS,LIC India
-LTTS.NS,L&T Technology Services
-MFSL.NS,Max Financial
-MOTHERSON.NS,Motherson Sumi
-MPHASIS.NS,Mphasis
-NAUKRI.NS,Info Edge (Naukri)
-NMDC.NS,NMDC Ltd
-PAGEIND.NS,Page Industries
+ISEC.NS,ICICI Securities
 PEL.NS,Piramal Enterprises
-PIDILITIND.NS,Pidilite Industries
-PIIND.NS,PI Industries
+JIOFIN.NS,Jio Financial
+DELHIVERY.NS,Delhivery
+KAYNES.NS,Kaynes Technology
 PNB.NS,Punjab National Bank
-POLYCAB.NS,Polycab India
-RECLTD.NS,REC Ltd
-SBICARD.NS,SBI Cards
-SIEMENS.NS,Siemens India
-SRF.NS,SRF Ltd
-TATACONSUM.NS,Tata Consumer Products
-TATAPOWER.NS,Tata Power
-TATAELXSI.NS,Tata Elxsi
-TORNTPHARM.NS,Torrent Pharma
+GRANULES.NS,Granules India
+RBLBANK.NS,RBL Bank
+AUROPHARMA.NS,Aurobindo Pharma
+UNITDSPR.NS,United Spirits
+ABCAPITAL.NS,Aditya Birla Capital
+BSOFT.NS,Birlasoft
+MPHASIS.NS,Mphasis
+TATAMOTORS.NS,Tata Motors
+EICHERMOT.NS,Eicher Motors
+ASHOKLEY.NS,Ashok Leyland
+ITC.NS,ITC Ltd
+JSWSTEEL.NS,JSW Steel
+POWERGRID.NS,Power Grid Corporation
+POONAWALLA.NS,Poonawalla Fincorp
+HINDCOPPER.NS,Hindustan Copper
+CHOLAFIN.NS,Cholamandalam Investment
+ZYDUSLIFE.NS,Zydus Lifesciences
+VOLTAS.NS,Voltas
+FEDERALBNK.NS,Federal Bank
+MGL.NS,Mahanagar Gas
+IIFL.NS,IIFL Finance
+ONGC.NS,Oil & Natural Gas Corp
+SHRIRAMFIN.NS,Shriram Finance
+PHOENIXLTD.NS,Phoenix Mills
+IGL.NS,Indraprastha Gas Ltd
+COLPAL.NS,Colgate-Palmolive India
+JSWENERGY.NS,JSW Energy
+ADANIENT.NS,Adani Enterprises
+UTIAMC.NS,UTI Asset Management
+INDIGO.NS,InterGlobe Aviation
+FORTIS.NS,Fortis Healthcare
+MOTHERSON.NS,Samvardhana Motherson
+PAYTM.NS,One97 Communications (Paytm)
+INFY.NS,Infosys
+MAZDOCK.NS,Mazagon Dock
+SRF.NS,SRF Limited
+PGEL.NS,PG Electroplast
+NYKAA.NS,FSN E-Commerce (Nykaa)
+NBCC.NS,NBCC India
+CDSL.NS,Central Depository Services
+MANKIND.NS,Mankind Pharma
+HINDALCO.NS,Hindalco Industries
+ACC.NS,ACC Ltd
+MFSL.NS,Max Financial Services
+CANBK.NS,Canara Bank
+BHEL.NS,BHEL
+MARUTI.NS,Maruti Suzuki
+TATASTEEL.NS,Tata Steel
+360ONE.NS,360 ONE WAM
 TRENT.NS,Trent Ltd
-TVSMOTOR.NS,TVS Motor
-UBL.NS,United Breweries
+ADANIGREEN.NS,Adani Green Energy
+TCS.NS,Tata Consultancy Services
+PNBHOUSING.NS,PNB Housing Finance
+GLENMARK.NS,Glenmark Pharmaceuticals
+ALKEM.NS,Alkem Laboratories
+HUDCO.NS,HUDCO
+SYNGENE.NS,Syngene International
+M&M.NS,Mahindra & Mahindra
+LICI.NS,Life Insurance Corp
+NAUKRI.NS,Info Edge (India)
+POLYCAB.NS,Polycab India
+JUBLFOOD.NS,Jubilant FoodWorks
+COALINDIA.NS,Coal India
+BAJAJ_AUTO.NS,Bajaj Auto
+IOC.NS,Indian Oil Corporation
+TORNTPOWER.NS,Torrent Power
+DLF.NS,DLF Ltd
+JINDALSTEL.NS,Jindal Steel and Power
+HINDZINC.NS,Hindustan Zinc
+MANAPPURAM.NS,Manappuram Finance
+SUNTV.NS,Sun TV Network
+HAVELLS.NS,Havells India
+CIPLA.NS,Cipla
+SBICARD.NS,SBI Cards & Payment Services
+PFC.NS,Power Finance Corporation
+RECLTD.NS,REC Ltd
+KOTAKBANK.NS,Kotak Mahindra Bank
+BANKBARODA.NS,Bank of Baroda
+INDHOTEL.NS,Indian Hotels
+LUPIN.NS,Lupin
+BANKINDIA.NS,Bank of India
 UNIONBANK.NS,Union Bank of India
-UPL.NS,UPL Ltd
-VEDL.NS,Vedanta Ltd
-VOLTAS.NS,Voltas Ltd
-WHIRLPOOL.NS,Whirlpool India
-ZEEL.NS,Zee Entertainment
+SONACOMS.NS,Sona BLW Precision
+PRESTIGE.NS,Prestige Estates Projects
+IDFCFIRSTB.NS,IDFC First Bank
+AMBUJACEM.NS,Ambuja Cements
+INDUSTOWER.NS,Indus Towers
+VEDL.NS,Vedanta
+WIPRO.NS,Wipro
+COFORGE.NS,Coforge
+INDUSINDBK.NS,IndusInd Bank
+REDINGTON.NS,Redington
+HCLTECH.NS,HCL Technologies
+LTIM.NS,LTIMindtree
+DIXON.NS,Dixon Technologies
+CAMS.NS,CAMS
+TITAGARH.NS,Titagarh Rail Systems
+OIL.NS,Oil India
+NATIONALUM.NS,National Aluminium
+HDFCLIFE.NS,HDFC Life Insurance
