@@ -21,13 +21,24 @@ def get_breakouts():
                 continue
 
             current_price = data['Close'].iloc[-1]
-            today_high = data['High'].max()
-            today_low = data['Low'].min()
+            today_high = data['High'].iloc[:-1].max()
+            today_low = data['Low'].iloc[:-1].min()
+
 
             if current_price > today_high:
-                breakout_stocks.append((symbol, name, "Above High", current_price))
+                status = "Above High"
             elif current_price < today_low:
-                breakout_stocks.append((symbol, name, "Below Low", current_price))
+                status = "below Low"
+            else: continue
+
+            breakout_stocks.append({
+                'symbol' : symbol,
+                'name' : name,
+                'status' : status,
+                'current_price' : round(current_price,2),
+                'today_high' : round(today_high,2),
+                'today_low' : round(today_low,2)
+            })
 
         except Exception as e:
             # print(f"Error with {symbol}: {e}")

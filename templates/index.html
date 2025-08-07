@@ -62,9 +62,9 @@
             <td class="status {{ 'Above' if stock.status == 'Above High' else 'Below' }}">
                 {{ stock.status }}
             </td>
-            <td>₹{{ stock.price }}</td>
-            <td>₹{{ stock.high }}</td>
-            <td>₹{{ stock.low }}</td>
+            <td>₹{{ stock.current_price }}</td>
+            <td>₹{{ stock.today_high }}</td>
+            <td>₹{{ stock.today_low }}</td>
         </tr>
         {% endfor %}
     </table>
