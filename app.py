@@ -5,8 +5,9 @@ import pandas as pd
 
 app = Flask(__name__)
 
-# Load stock symbols
-stock_df = pd.read_csv("stock_list.csv")
+
+csv_path = os.path.join(os.path.dirname(__file__), "stock_list.csv")
+stock_df = pd.read_csv(csv_path)
 
 def get_breakouts():
     breakout_stocks = []
@@ -24,25 +25,25 @@ def get_breakouts():
             today_high = data['High'].iloc[:-1].max()
             today_low = data['Low'].iloc[:-1].min()
 
-
             if current_price > today_high:
                 status = "Above High"
             elif current_price < today_low:
                 status = "below Low"
-            else: continue
+            else:
+                continue
 
             breakout_stocks.append({
-                'symbol' : symbol,
-                'name' : name,
-                'status' : status,
-                'current_price' : round(current_price,2),
-                'today_high' : round(today_high,2),
-                'today_low' : round(today_low,2)
+                'symbol': symbol,
+                'name': name,
+                'status': status,
+                'current_price': round(current_price, 2),
+                'today_high': round(today_high, 2),
+                'today_low': round(today_low, 2)
             })
 
-        except Exception as e:
-            # print(f"Error with {symbol}: {e}")
+        except Exception:
             continue
+
     return breakout_stocks
 
 @app.route('/')
