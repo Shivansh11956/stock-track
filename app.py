@@ -11,7 +11,7 @@ stock_df = pd.read_csv(csv_path)
 def get_breakouts():
     bullish_stocks = []
     bearish_stocks = []
-
+    remaining_stocks = []
     for _, row in stock_df.iterrows():
         symbol = row['symbol']
         name = row['name']
@@ -94,16 +94,27 @@ def get_breakouts():
                     'yesterday_high': round(yesterday_high, 2),
                     'yesterday_low': round(yesterday_low, 2)
                 })
+            else :
+                remaining_stocks.append({
+                    'symbol': symbol,
+                    'name': name,
+                    'status': "NULL",
+                    'current_price': round(current_price, 2),
+                    'today_high': round(today_high, 2),
+                    'today_low': round(today_low, 2),
+                    'yesterday_high': round(yesterday_high, 2),
+                    'yesterday_low': round(yesterday_low, 2)
+                })
         except Exception:
             continue
 
-    return bullish_stocks, bearish_stocks
+    return bullish_stocks, bearish_stocks, remaining_stocks
 
 
 @app.route('/')
 def index():
-    bullish, bearish = get_breakouts()
-    return render_template("index.html", bullish_stocks=bullish, bearish_stocks=bearish)
+    bullish, bearish, remaining = get_breakouts()
+    return render_template("index.html", bullish_stocks=bullish, bearish_stocks=bearish, remaining_stocks = remaining)
 
 
 if __name__ == '__main__':

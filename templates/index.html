@@ -42,6 +42,7 @@
         }
         .Below {
             color: red;
+        }
         h2 {
             margin-top: 40px;
         }
@@ -109,6 +110,36 @@
         </table>
     {% else %}
         <p>No bearish breakdowns detected.</p>
+    {% endif %}
+
+    <h2> Remaining Stocks</h2>
+    {% if remaining_stocks %}
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Current Price</th>
+                <th>Today's High</th>
+                <th>Today's Low</th>
+                <th>Yesterday's High</th>
+                <th>Yesterday's Low</th>
+            </tr>
+            {% for stock in remaining_stocks %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.name }}</td>
+                <td>{{ stock.status }}</td>
+                <td>{{ stock.current_price }}</td>
+                <td>{{ stock.today_high }}</td>
+                <td>{{ stock.today_low }}</td>
+                <td>{{ stock.yesterday_high }}</td>
+                <td>{{ stock.yesterday_low }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No Remaining Stocks detected.</p>
     {% endif %}
 </body>
 </html>
