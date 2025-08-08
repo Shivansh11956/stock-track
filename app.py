@@ -38,8 +38,8 @@ def get_breakouts():
                 continue
 
             current_price = today_data['Close'].iloc[-1]
-            today_high = today_data['High'].max()
-            today_low = today_data['Low'].min()
+            today_high = data['High'].iloc[:-1].max()
+            today_low = data['Low'].iloc[:-1].min()
             yesterday_high = yesterday_data['High'].max()
             yesterday_low = yesterday_data['Low'].min()
 

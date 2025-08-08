@@ -54,6 +54,8 @@
             <th>Current Price</th>
             <th>Today's High</th>
             <th>Today's Low</th>
+            <th>Yesterday's's High</th>
+            <th>Yesterday's's Low</th>
         </tr>
         {% for stock in stocks %}
         <tr>
@@ -65,6 +67,8 @@
             <td>₹{{ stock.current_price }}</td>
             <td>₹{{ stock.today_high }}</td>
             <td>₹{{ stock.today_low }}</td>
+            <td>₹{{ stock.yesterday_high}}</td>
+            <td>₹{{ stock.yesterday_low}}</td>
         </tr>
         {% endfor %}
     </table>
