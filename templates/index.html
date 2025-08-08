@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stock Breakouts</title>
-    <!-- <meta http-equiv="refresh" content="60"> -->
+    <title>Stock Breakout Tracker</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,9 +17,12 @@
             border-collapse: collapse;
             margin-top: 30px;
             background-color: white;
+            margin-bottom: 30px;
         }
         th, td {
             padding: 12px;
+            border: 1px solid #ccc;
+            padding: 10px;
             text-align: center;
             border: 1px solid #ddd;
         }
@@ -36,44 +38,77 @@
         }
         .Above {
             color: green;
+            background-color: #f4f4f4;
         }
         .Below {
             color: red;
+        h2 {
+            margin-top: 40px;
         }
     </style>
+
 </head>
 <body>
-    <h1>Live Stock Breakouts</h1>
+    <h1>Stock Breakout Tracker</h1>
 
-    {% if stocks %}
-    <table>
-        <tr>
-            <th>Symbol</th>
-            <th>Name</th>
-            <th>Status</th>
-            <th>Current Price</th>
-            <th>Today's High</th>
-            <th>Today's Low</th>
-            <th>Yesterday's's High</th>
-            <th>Yesterday's's Low</th>
-        </tr>
-        {% for stock in stocks %}
-        <tr>
-            <td>{{ stock.symbol }}</td>
-            <td>{{ stock.name }}</td>
-            <td class="status {{ 'Above' if stock.status == 'Above High' else 'Below' }}">
-                {{ stock.status }}
-            </td>
-            <td>₹{{ stock.current_price }}</td>
-            <td>₹{{ stock.today_high }}</td>
-            <td>₹{{ stock.today_low }}</td>
-            <td>₹{{ stock.yesterday_high}}</td>
-            <td>₹{{ stock.yesterday_low}}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <h2>Bullish Breakouts</h2>
+    {% if bullish_stocks %}
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Current Price</th>
+                <th>Today's High</th>
+                <th>Today's Low</th>
+                <th>Yesterday's High</th>
+                <th>Yesterday's Low</th>
+            </tr>
+            {% for stock in bullish_stocks %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.name }}</td>
+                <td class="status {{ 'Above' if stock.status == 'Above High' else 'Below' }}">{{ stock.status }}</td>
+                <td>{{ stock.current_price }}</td>
+                <td>{{ stock.today_high }}</td>
+                <td>{{ stock.today_low }}</td>
+                <td>{{ stock.yesterday_high }}</td>
+                <td>{{ stock.yesterday_low }}</td>
+            </tr>
+            {% endfor %}
+        </table>
     {% else %}
-    <p style="text-align:center;">No breakout stocks right now. Market may be closed or no breakouts.</p>
+        <p>No bullish breakouts detected.</p>
+    {% endif %}
+
+    <h2> Bearish Breakdowns</h2>
+    {% if bearish_stocks %}
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Current Price</th>
+                <th>Today's High</th>
+                <th>Today's Low</th>
+                <th>Yesterday's High</th>
+                <th>Yesterday's Low</th>
+            </tr>
+            {% for stock in bearish_stocks %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.name }}</td>
+                <td class="status {{ 'Above' if stock.status == 'Above High' else 'Below' }}">{{ stock.status }}</td>
+                <td>{{ stock.current_price }}</td>
+                <td>{{ stock.today_high }}</td>
+                <td>{{ stock.today_low }}</td>
+                <td>{{ stock.yesterday_high }}</td>
+                <td>{{ stock.yesterday_low }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No bearish breakdowns detected.</p>
     {% endif %}
 </body>
 </html>
